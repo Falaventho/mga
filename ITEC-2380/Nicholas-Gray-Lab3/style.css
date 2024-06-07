@@ -1,0 +1,167 @@
+/*
+
+    Color Scheme:
+    blue: #0e2db5;
+    gold: #9c820d;
+    light blue: #6982f3;
+    off-white of choice: whitesmoke;
+
+*/
+
+
+:root {
+    --primary: #0e2db5;
+    --secondary: #9c820d;
+    --success: #2db50e;
+    --info: #6982f3;
+    --danger: #b50e2d;
+    --background: whitesmoke;
+    --container-background: white;
+    --text-color: black;
+}
+
+        /*  Animation Keyframes for Future Lab Reuse */
+
+/*@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}*/
+
+
+body {
+    color: var(--text-color);
+    background-image: url(img/background-large.jpg);
+    background-size: cover;
+}
+
+hr{
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    min-width: min-content;
+    margin: 40px auto 50px auto;
+    padding: 15px;
+    padding-top: 0px;
+
+    background-color: var(--container-background);
+    font-family: 'Nunito Sans', sans-serif;
+    outline: 2px solid black;
+    border-radius: 1px;
+    box-shadow: 3px 3px 15px grey;
+    /* animation: 0.5s ease-in 0s 1 slideInFromLeft; */
+}
+
+.header-box {
+    margin-bottom: 25px;
+    display: flex;
+
+}
+
+.header-img {
+    border-radius: 3px;
+}
+
+.header-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: var(--secondary);
+}
+
+.footer-box {
+    max-width: 100%;
+}
+
+.membership-link-container {
+    display: flex;
+    max-width: 700px;
+}
+
+.membership-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-link-img {
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+.membership-link-caption {
+    text-align: center;
+    color: var(--info);
+    font-size: small;
+}
+
+.title  {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: var(--primary);
+}
+
+.loud {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--info);
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+        /*  Animation Settings for Future Lab Reuse */
+        
+/* .header-box {
+    opacity: 0;
+    animation: 0.25s ease-out 0.5s 1 fadeIn forwards;
+}
+
+.first-hr {
+    opacity: 0;
+    animation: 0.25s ease-out 0.75s 1 fadeIn forwards;
+}
+
+.main-box {
+    opacity: 0;
+    animation: 0.25s ease-out 1s 1 fadeIn forwards;
+}
+
+.second-hr {
+    opacity: 0;
+    animation: 0.25s ease-out 1.25s 1 fadeIn forwards;
+}
+
+.footer-box {
+    opacity: 0;
+    animation: 0.25s ease-out 1.5s 1 fadeIn forwards;
+} */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Nicholas Gray Portfolio</title>
+</head>
+<body class="bg-darkraisin text-blush flex flex-col print:bg-white">
+    <div class="print:hidden">
+        <nav class="sticky top-0 pt-4 bg-darkraisin z-50 pb-4">
+            <ul class="list-none flex justify-evenly w-full text-5xl font-titlefont md:text-2xl lg:text-3xl">
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./index.html">Home</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./resume.html">Resume</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./interests.html">Interests</a></li>
+                <li class="border-hunyadi border-b-4 text-hunyadi">Donate</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main" class="flex justify-center my-24">
+        <div id="form-container" class="w-2/3 flex flex-col border-2 border-blush rounded-md p-8 font-copyfont text-xl xl:w-3/4 md:w-full md:mx-2">
+            <h2 class="text-4xl text-center">Donate</h2>
+            <hr class="border-blush w-3/4 self-center my-4">
+            <form action="javascript:;" onsubmit="submitPopup(this)" class="flex flex-col text-left w-3/4 self-center">
+                <div id="block-1" class="flex justify-between lg:flex-col">
+                    <section class="my-8 lg:w-min-content lg:text-center lg:mb-0">
+                        <p class="text-3xl mb-2 w-1/2 lg:w-full">Title</p>
+                        <input type="radio" name="title" id="mrtitle">
+                        <label for="mrtitle">Mr.</label>
+                        <br>
+                        <input type="radio" name="title" id="mstitle">
+                        <label for="mstitle">Ms.</label>
+                        <br>
+                        <input type="radio" name="title" id="mrstitle">
+                        <label for="mrstitle">Mrs.</label>
+                        <br>
+                        <input type="radio" name="title" id="misstitle">
+                        <label for="misstitle">Miss</label>
+                        <br>
+                        <input type="radio" name="title" id="nonetitle">
+                        <label for="nonetitle">None</label>
+                    </section>
+                    <section class="my-8 flex flex-col w-1/2 text-center lg:w-min-content lg:mb-0 lg:self-center">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required class="text-black focus:outline-none p-1 px-4 text-xl">
+                        <hr class="border-0 my-6 lg:my-2">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" class="text-black focus:outline-none p-1 px-4 text-xl">
+                    </section>
+                </div>
+                <div id="block-2" class="flex justify-between lg:flex-col">
+                    <section class="my-12 flex flex-col w-1/2 p-8 lg:w-full lg:my-4  lg:w-min-content lg:mb-0 lg:self-center lg:text-center">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="hello@example.com" class="text-black focus:outline-none p-1 px-4 text-xl lg:text-center">
+                        <br>
+                        <label for="phonetype">Phone Type</label>
+                        <select name="phonetype" id="phonetype" class="text-black focus:outline-none p-1 text-lg lg:text-center">
+                            <option value="none" selected>--Select One--</option>
+                            <option value="landline">Landline</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="work">Work</option>
+                        </select>
+                        <br>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" class="text-black focus:outline-none p-1 px-4 text-xl lg:text-center">
+                    </section>
+                    <section class="flex flex-col w-1/2 p-8 my-12 lg:mb-0 lg:self-center lg:text-center lg:whitespace-nowrap xl:w-3/4 lg:w-full">
+                        <section class="flex flex-col">
+                            <label for="ccn">Credit Card Number</label>
+                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required class="text-black focus:outline-none p-1 px-4 text-xl mb-4 xl:text-center">
+                            <label for="cvv">CVV</label>
+                            <input type="text" name="cvv" id="cvv" maxlength="3" minlength="3" required class="text-black focus:outline-none p-1 px-4 text-xl w-16 lg:self-center">
+                        </section>
+                        <section class="my-8 flex flex-col">
+                            <label for="amount">Amount in USD</label>
+                            <input type="number" step="0.01" name="amount" id="amount" min="0" placeholder="0.00" required class="text-black focus:outline-none p-1 px-4 text-xl mb-4">
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date" required  class="text-black focus:outline-none p-1 px-4 text-xl">
+                        </section>
+                    </section>
+                </div>
+                <section class="my-8 flex justify-between">
+                    <div class="flex flex-col justify-center">
+                        <label for="agree" class="mr-4 text-2xl lg:text-xl md:text-base lg:text-center">Agree to Terms and Conditions?</label>
+                        <br>
+                        <input type="checkbox" name="agree" id="agree" class="h-6 w-6 self-center" required>
+                     </div>
+                    <input type="submit" value="Submit" class="bg-darkraisinalt border-2 border-blush text-3xl text-blush p-2 rounded-md">
+                </section>
+            </form>
+        </div>
+        <script>
+
+            document.getElementById("date").valueAsDate = new Date();
+
+            function submitPopup(form) {
+              let text = `Hey ${form.fname.value}, are you sure you want to donate $${form.amount.value}? Hit ok to send it, or cancel if you changed your mind.`;
+              if (confirm(text) == true) {
+                window.location.href = './index.html';
+              } else {
+                text = "You canceled your donation!";
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+    </div>
+</body>
+</html>

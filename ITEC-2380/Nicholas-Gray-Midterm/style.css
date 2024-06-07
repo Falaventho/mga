@@ -1,0 +1,243 @@
+:root {
+    --bg-primary: #FDFCDC;
+    --bg-secondary: #FED9B7;
+    --primary: #0081A7;
+    --primary-alt: #00AFB9;
+    --secondary: #F07167;
+    --header-font: "Orbit";
+    --text-font: "Noto Sans";
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-font);
+    background-image: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary));
+}
+
+header {
+    display: flex;
+    padding: 16px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.page-title {
+}
+
+.logo {
+    border-radius: 100px;
+    max-width: 200px;
+    box-shadow: 2px 2px 20px var(--secondary);
+    opacity: 80%;
+}
+
+.title {
+    font-family: var(--header-font);
+    font-size: 64px;
+    color: var(--primary);
+    text-shadow: 2px 2px var(--secondary);
+    text-decoration: underline;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: center;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navbutton {
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0px 40px;
+    border: solid black 2px;
+}
+
+.navlink {
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--primary-alt);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.navbutton:hover {
+    background-color: var(--secondary);
+    text-shadow: 1px 1px black;
+    transform: scale(1.2);
+    transition: ease-out .25s;
+}
+
+.wrapper {
+    margin: 64px auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 32px 64px 0px 32px;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 700px;
+}
+
+.content-wrapper {
+    margin-right: 50px;
+}
+
+.content-title {
+    font-size: 42px;
+}
+
+.rotating-wrapper {
+    max-width: 300px;
+    margin: auto;
+}
+
+.ad-title {
+    font-size: 32px;
+}
+
+.ad-name {
+    text-align: center;
+    margin: auto;
+}
+
+.ad-img {
+    max-width: 75px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.coupon-title {
+    font-size: 42px;
+    margin: auto;
+}
+
+.coupons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coupon-card {
+    border: dashed black 2px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 64px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    align-items: center;
+}
+
+.foot-link {
+    color: var(--primary);
+}
+
+.menu {
+    list-style: none;
+    border: solid black 1px;
+    box-shadow: 2px 2px 20px var(--secondary);
+    padding-right: 32px;
+    background-color: whitesmoke;
+}
+
+.item-name {
+    text-align: center;
+    color: var(--primary);
+    font-size: large;
+
+}
+
+.about-title {
+    font-size: 32px;
+}
+
+.about-text {
+    font-size: x-large;
+    width: 125%;
+}
+
+
+@media screen and (max-width:1000px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-title {
+        font-size: xx-large;
+    }
+
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navbutton {
+        width: 100px;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .navlink {
+        font-size: large;
+    }
+
+
+    .body-wrapper {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 64px;
+    }
+
+    .wrapper {
+        margin-bottom: unset;
+        padding-bottom: 32px;
+    }
+
+    .menu {
+    }
+
+}
+
+
+/* In my defense, this is the only reasonable place to use !important... and I needed it... because I couldn't find the problem with the footer rendering */
+@media print {
+    header, nav, footer {
+        display: none !important;
+    }
+
+    .about-title {
+        font-size: x-large;
+    }
+
+    .about-text {
+        font-size: medium;
+    }
+
+    .menu {
+        border: unset;
+        background-color: white;
+        box-shadow: unset;
+    }
+}

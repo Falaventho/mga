@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Nicholas Gray Portfolio</title>
+</head>
+<body class="bg-darkraisin text-blush radial-gradient flex flex-col justify-evenly">
+    <section class="h-screen" id="head">
+        <nav class="sticky top-0 pt-4 bg-darkraisin z-50 pb-4">
+            <ul class="list-none flex justify-evenly w-full text-5xl font-titlefont md:text-2xl lg:text-3xl">
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="#">Resume</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="#">Interests</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="#">Donate</a></li>
+            </ul>
+        </nav>
+        <div class="flex flex-row justify-right mt-64 lg:justify-center">
+            <div class="pt-24 ml-16 text-right mr-48 flex-nowrap whitespace-nowrap lg:mr-0 lg:ml-0">
+                <h1 class="text-8xl font-titlefont hover:scale-105 transform transition duration-700 md:whitespace-normal md:flex-wrap md:text-center md:leading-relaxed">Hi, I'm Nicholas<span class="md:opacity-0 transform transition duration-700">.</span></h1>
+                <br>
+                <h3 class="text-5xl font-copyfont hover:scale-105 transform transition duration-700 lg:opacity-0 md:hidden">I develop for the web.</h3>
+            </div>
+            <img src="./img/Computer.png" alt="Computer Logo" class="motion-safe:animate-pulse mr-16 transform transition duration-700 xl:opacity-0 lg:hidden">
+        </div>
+        <a href="#body"><img src="./img/arrow.png" alt="" class="motion-safe:animate-bounce opacity-80 hover:opacity-100 m-auto mt-12 hover:scale-110 transition ease-in-out duration-500"></a>
+    </section>
+
+    <section class="h-screen flex flex-col w-4/5 m-auto" id="body">
+        <div class="flex flex-row h-full w-full font-copyfont text-2xl :text-xl mt-16 lg:text-lg md:text-base">
+            <p class="w-max h-4/5 m-auto mt-40">
+                    Welcome! I'm Nicholas, a student transitioning into the information technology sector and concentrating on software engineering. My journey has led me from a background in trades to pursuing my major in software engineering, where I discovered my passion for creating innovative software solutions in the world of technology.
+                    <br><br>
+                    Throughout my studies, I have gained a solid foundation in a range of programming languages, including C, JavaScript (JS), TypeScript (TS), HTML, CSS, and Python. These versatile tools have allowed me to develop robust web applications and grapple with the major problems that software engineers face.
+                    <br><br>
+                    With a focus on growth and adaptability, I am constantly expanding my skill set to prepare for this rapidly evolving industry. As a software engineering student, I am working to develop a deep understanding of best practices, software design principles, software architecture, and code maintainability.
+            </p>
+        </div>
+        <a href="#technology"><img src="./img/arrow.png" alt="" class="hover:opacity-100 m-auto mt-12 hover:scale-110 transition ease-in-out duration-500"></a>
+    </section>
+
+    <h1 class="text-center text-6xl font-titlefont mt-40 pt-20" id="technology">What I'm Working With Now:</h1>
+
+    <section>
+        <div class="h-screen flex flex-col w-3/5 m-auto justify-evenly">
+
+            <div class="w-full h-2/5 text-4xl 2xl:text-2xl lg:text-xl md:text-lg sm:text-base">
+
+                <div class="tab" id="angular">
+                    <h2 class="text-center text-8xl font-titlefont pb-16 lg:text-6xl sm:text-4xl">Angular</h2>
+                    <p class="font-copyfont pb-16">Angular is a popular JavaScript framework developed by Google. It is widely used for building dynamic and scalable web applications. With its extensive set of tools and features, Angular allows developers to create complex single-page applications with ease.</p>
+                </div>
+
+                <div class="tab" id="react">
+                    <h2 class="text-center text-8xl font-titlefont pb-16 lg:text-6xl sm:text-4xl">React</h2>
+                    <p class="font-copyfont">React is a JavaScript library maintained by Facebook. It is designed for building user interfaces, specifically for creating reusable UI components. React utilizes a virtual DOM (Document Object Model) to efficiently update and render components, resulting in faster and smoother user experiences. Its component-based architecture and extensive ecosystem make React a flexible and widely adopted choice for developing interactive web applications.</p>
+                </div>
+    
+                <div class="tab" id="gatsby">
+                    <h2 class="text-center text-8xl font-titlefont pb-16 lg:text-6xl sm:text-4xl">GatsbyJS</h2>
+                    <p class="font-copyfont">GatsbyJS is a modern static site generator built on top of React. It combines the benefits of static websites, such as fast load times and better SEO, with the power of React for building interactive user interfaces. GatsbyJS leverages GraphQL for data fetching, allowing developers to easily pull data from various sources and build highly optimized websites. It is often used for creating blogs, e-commerce sites, and content-rich web applications.</p>
+                </div>
+    
+                <div class="tab" id="firebase">
+                    <h2 class="text-center text-8xl font-titlefont pb-16 lg:text-6xl sm:text-4xl">Firebase</h2>
+                    <p class="font-copyfont">Firebase is a comprehensive development platform provided by Google. It offers a wide range of services and tools for building web and mobile applications. Firebase includes features like real-time database, cloud storage, user authentication, hosting, and more. It simplifies the backend infrastructure setup and provides easy-to-use APIs, making it an excellent choice for rapidly developing and deploying applications with serverless architecture.</p>
+                </div>
+    
+                <div class="tab" id="mongo">
+                    <h2 class="text-center text-8xl font-titlefont pb-16 lg:text-6xl sm:text-4xl">MongoDB</h2>
+                    <p class="font-copyfont">MongoDB is a popular NoSQL database system that provides a flexible and scalable approach to storing and retrieving data. It differs from traditional relational databases by using a document-oriented model, where data is stored in flexible, JSON-like documents. MongoDB's schema-less nature allows for easy and dynamic data modeling, making it well-suited for projects that require flexibility and scalability. It is commonly used in modern web applications for its ease of use and ability to handle large amounts of data.</p>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row justify-evenly">
+                <a href="#angular" class="">
+                    <img src="./img/angular.png" alt="" class="hover:scale-125 transition ease-in-out duration-300">
+                </a>
+                <a href="#react" class="">
+                    <img src="./img/react.png" alt="" class="hover:scale-125 transition ease-in-out duration-300">
+                </a>
+                <a href="#gatsby" class="">
+                    <img src="./img/gatsby.png" alt="" class="hover:scale-125 transition ease-in-out duration-300">
+                </a>
+                <a href="#firebase" class="">
+                    <img src="./img/firebase.png" alt="" class="hover:scale-125 transition ease-in-out duration-300">
+                </a>
+                <a href="#mongo" class="">
+                    <img src="./img/mongo.png" alt="" class="hover:scale-125 transition ease-in-out duration-300">
+                </a>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

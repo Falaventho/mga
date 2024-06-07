@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Martian+Mono&family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Stopwatch - Erebos Gym</title>
+</head>
+<body class="bg-lace flex flex-col h-screen justify-between select-none text-falu font-titlefont">
+    <div class="mt-8 flex flex-col justify-between">
+        <div class="flex flex-row justify-between w-full">
+            <a href="./index.html" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl hover:scale-105 transition transform ease-in-out duration-100 ml-8 lg:text-xl sm:text-base">Back</a>
+        </div>
+        <div class="mb-2">
+            <h1 class="text-6xl text-center px-8 lg:text-3xl sm:text-2xl lg:mt-4">Stopwatch</h1>
+            <hr class="border-falu border-2 w-1/4 mx-auto">
+        </div>
+    </div>
+    <main class="flex flex-col justify-evenly font-titlefont bg-dutch w-2/5 self-center my-auto p-16 h-3/4 rounded-xl drop-shadow-dark border-2 border-sage xl:p-12 lg:p-8 sm:p-2">
+        <div class="flex flex-col h-4/5 justify-center">
+            <div id="display-time" class="text-6xl border-falu border-2 self-center px-4 py-2 rounded-md flex justify-center w-full lg:text-3xl sm:text-2xl lg:mt-4"><h3 id="minutes" class="w-1/4 ml-auto">00</h3>:<h3 id="seconds" class="w-1/4 ml-auto">00</h3>:<h3 id="tenths" class="w-1/4 ml-auto">00</h3></div>
+            <div class="flex justify-between mt-16 lg:mt-8 sm:mt-4 sm:flex-col sm:gap-y-4">
+                <button id="button-start" class="text-3xl border-2 border-sage bg-falu text-lace px-4 pt-2 pb-1 rounded-xl w-min self-center hover:scale-105 transition transform ease-in-out duration-100 lg:text-xl sm:text-sm">Start</button>
+                <button id="button-stop" class="text-3xl border-2 border-sage bg-falu text-lace px-4 pt-2 pb-1 rounded-xl w-min self-center hover:scale-105 transition transform ease-in-out duration-100 lg:text-xl sm:text-sm">Stop</button>
+                <button id="button-reset" class="text-3xl border-2 border-sage bg-falu text-lace px-4 pt-2 pb-1 rounded-xl w-min self-center hover:scale-105 transition transform ease-in-out duration-100 lg:text-xl sm:text-sm">Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/auth.js" onload="onLoadAuthCheck()"></script>
+    <script src="scripts/stopwatch.js"></script>
+</body>
+</html>

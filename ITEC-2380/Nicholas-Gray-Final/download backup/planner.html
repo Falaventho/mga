@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Martian+Mono&family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Planner - Erebos Gym</title>
+</head>
+<body class="bg-lace flex flex-col h-screen justify-between select-none font-titlefont text-falu">
+    <div class="mt-8 flex flex-col justify-between">
+        <div class="flex flex-row justify-between w-full">
+            <a href="./schedule.html" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl hover:scale-105 transition transform ease-in-out duration-100 ml-8 lg:text-xl sm:text-base">Back</a>
+        </div>
+        <div class="lg:my-6">
+            <h1 class="text-6xl text-center px-8 lg:text-4xl">Enter Data to Calculate</h1>
+            <hr class="border-falu border-2 w-2/5 mx-auto">
+        </div>
+    </div>
+    <main class="flex flex-col justify-evenly bg-dutch w-1/2 self-center my-auto p-16 h-3/4 rounded-xl drop-shadow-dark border-2 border-sage xl:p-12 lg:w-3/4 md:w-full md:rounded-none lg:justify-start lg:h-screen lg:p-8 md:p-4">
+        <div class="flex flex-row justify-between lg:flex-col">
+            <section class="flex flex-col justify-evenly h-96">
+                <h2 class="text-4xl mb-8 lg:text-3xl lg:mt-4 lg:self-center lg:mb-2">One Rep Maximums:</h2>
+                <div class="flex flex-row justify-between mr-4">
+                    <h3 class="text-2xl pt-2 lg:text-lg">Back Squat</h3>
+                    <input type="number" min="0" max="495" name="bs-input" id="bs-input" class="whitespace-nowrap text-center border-dutch bg-lace py-2 px-4 rounded-md border-2 border-sage outline-falu w-24 text-black text-xl font-copyfont">
+                </div>
+                <div class="flex flex-row justify-between mr-4">
+                    <h3 class="text-2xl pt-2 lg:text-lg">Bench Press</h3>
+                    <input type="number" min="0" max="495" name="bp-input" id="bp-input" class="whitespace-nowrap text-center border-dutch bg-lace py-2 px-4 rounded-md border-2 border-sage outline-falu w-24 text-black text-xl font-copyfont">
+                </div>
+                <div class="flex flex-row justify-between mr-4">
+                    <h3 class="text-2xl pt-2 lg:text-lg">Front Squat</h3>
+                    <input type="number" min="0" max="495" name="fs-input" id="fs-input" class="whitespace-nowrap text-center border-dutch bg-lace py-2 px-4 rounded-md border-2 border-sage outline-falu w-24 text-black text-xl font-copyfont">
+                </div>
+                <div class="flex flex-row justify-between mr-4">
+                    <h3 class="text-2xl pt-2 lg:text-lg">Strict Press</h3>
+                    <input type="number" min="0" max="495" name="sp-input" id="sp-input" class="whitespace-nowrap text-center border-dutch bg-lace py-2 px-4 rounded-md border-2 border-sage outline-falu w-24 text-black text-xl font-copyfont">
+                </div>
+            </section>
+            <section class="flex flex-col justify-center text-center">
+                <h3 class="text-4xl pt-2 mb-8 lg:text-3xl lg:mt-8">Start Week:</h3>
+                <input type="date" name="date-input" id="date-input" class="text-3xl outline-falu py-2 px-4">
+            </section>
+        </div>
+        <button id="button-create" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl ml-auto mr-4 mt-4 hover:scale-105 transition transform ease-in-out duration-100 lg:text-xl sm:text-base lg:mr-auto">Create Plan</button>
+    </main>
+    <script src="scripts/auth.js" onload="onLoadAuthCheck()"></script>
+    <script src="scripts/planner.js"></script>
+</body>
+</html>

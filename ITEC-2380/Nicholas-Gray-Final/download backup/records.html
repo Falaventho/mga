@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Martian+Mono&family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Records - Erebos Gym</title>
+</head>
+<body class="bg-lace flex flex-col h-screen justify-between select-none font-titlefont text-falu">
+    <div class="mt-8 flex flex-col justify-between lg:mt-4">
+        <div class="flex flex-row justify-between w-full">
+            <a href="./index.html" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl hover:scale-105 transition transform ease-in-out duration-100 ml-8 lg:text-xl sm:text-base">Back</a>
+            <img id="cog" src="./img/cog.png" alt="settings" class="w-16 h-16 mr-8 hover:scale-110 transition transform ease-in-out duration-100 lg:w-8 lg:h-8">
+        </div>
+        <div class="mr-8">
+            <h1 class="text-6xl text-center px-8 lg:text-3xl sm:text-2xl lg:mt-4">Personal Records</h1>
+            <hr class="border-falu border-2 w-1/3 mx-auto lg:w-2/5 md:w-1/2">
+        </div>
+    </div>
+    <main class="flex flex-row justify-evenly h-2/5">
+        <div class="flex flex-col h-full w-1/6">
+            <h3 class="text-center text-5xl 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs">Back Squat</h3>
+            <div class="bg-dutch border-falu border-4 border-b-0 h-full w-full text-center">
+                <h4 class="text-5xl mt-4 flex justify-center 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs" id="bs-value">...</h4>
+                <hr class="border-falu border-2 w-1/2 mx-auto">
+            </div>
+        </div>
+        <div class="flex flex-col h-full w-1/6">
+            <h3 class="text-center text-5xl 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs">Bench Press</h3>
+            <div class="bg-dutch border-falu border-4 border-b-0 h-full w-full text-center">
+                <h4 class="text-5xl mt-4 flex justify-center 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs" id="bp-value">...</h4>
+                <hr class="border-falu border-2 w-1/2 mx-auto">
+            </div>
+        </div>
+        <div class="flex flex-col h-full w-1/6">
+            <h3 class="text-center text-5xl 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs">Front Squat</h3>
+            <div class="bg-dutch border-falu border-4 border-b-0 h-full w-full text-center">
+                <h4 class="text-5xl mt-4 flex justify-center 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs" id="fs-value">...</h4>
+                <hr class="border-falu border-2 w-1/2 mx-auto">
+            </div>
+        </div>
+        <div class="flex flex-col h-full w-1/6">
+            <h3 class="text-center text-5xl 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs">Strict Press</h3>
+            <div class="bg-dutch border-falu border-4 border-b-0 h-full w-full text-center">
+                <h4 class="text-5xl mt-4 flex justify-center 2xl:text-4xl xl:text-3xl lg:text-xl md:text-base sm:text-xs" id="sp-value">...</h4>
+                <hr class="border-falu border-2 w-1/2 mx-auto">
+            </div>
+        </div>
+    </main>
+    <script src="scripts/auth.js" onload="onLoadAuthCheck()"></script>
+    <script src="scripts/records.js"></script>
+</body>
+</html>

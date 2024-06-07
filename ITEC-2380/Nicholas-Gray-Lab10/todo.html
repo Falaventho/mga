@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Nicholas Gray Portfolio</title>
+</head>
+<body class="bg-darkraisin text-blush flex flex-col print:bg-white">
+    <div class="print:hidden">
+        <nav class="sticky top-0 pt-4 bg-darkraisin z-50 pb-4">
+            <ul class="list-none flex justify-evenly w-full text-5xl font-titlefont md:text-2xl lg:text-3xl">
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./index.html">Home</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./resume.html">Resume</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./interests.html">Interests</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main" class="flex justify-center my-24">
+        <div id="list-container" class="border-2 border-blush rounded-lg w-1/3 flex flex-col justify-between lg:w-1/2 md:w-4/6">
+            <h2 class="text-center text-3xl mt-4">To-Do List</h2>
+            <hr class="border-blush mt-4 mb-16 w-1/2 self-center">
+            <div id="tasks">
+            </div>
+            <div id="input-section" class="mx-auto pb-4 flex flex-col justify-center mt-16">
+                <input type="text" name="taskin" id="taskin" maxlength="40" class="text-black text-xl w-64 rounded-md focus:outline-none px-4">
+                <button onclick="createNewItem()" class="mt-4 text-2xl border-2 border-blush rounded-md pb-1 w-32 self-center">Add Task</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>

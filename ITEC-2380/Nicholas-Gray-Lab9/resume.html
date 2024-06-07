@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Nicholas Gray Portfolio</title>
+</head>
+<body class="bg-darkraisin text-blush flex flex-col print:bg-white">
+    <div class="print:hidden">
+        <nav class="sticky top-0 pt-4 bg-darkraisin z-50 pb-4">
+            <ul class="list-none flex justify-evenly w-full text-5xl font-titlefont md:text-2xl lg:text-3xl">
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./index.html">Home</a></li>
+                <li class="border-hunyadi text-hunyadi">Resume</li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./interests.html">Interests</a></li>
+                <li class="border-transparent hover:border-hunyadi transition ease-in-out duration-300 border-b-4"><a href="./donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main" class="bg-blush my-16 self-center w-3/5 flex flex-row text-darkraisin font-copyfont p-2 justify-left print:bg-white print:w-full print: text-black print:my-0 xl:w-3/4 lg:w-4/5 md:w-5/6 sm:w-full">
+        <div id="resume-left-col" class="flex flex-col w-1/4 print:w-1/3">
+            <section id="contact" class="bg-darkraisin border-2 border-darkraisin flex flex-col p-3 text-blush text-center print:bg-white print:text-black print:border-black">
+                <h2 class="text-4xl font-titlefont xl:text-3xl lg:text-2xl">Nicholas<br>Gray</h2>
+                <hr class="my-4 print:border-black">
+                <h4 class="">Macon, GA</h4>
+                <h4 class="md:text-sm sm:text-xs">(432) 718-1850</h4>
+                <h4 class="text-center print:text-sm xl:text-sm lg:text-xs md:hidden">nickgray075@gmail.com</h4>
+            </section>
+            <section id="education" class="flex flex-col p-3">
+                <h2 class="text-3xl text-center mt-8 print:text-xl md:text-2xl">Education</h2>
+                <hr class="border-darkraisin my-4">
+                <div>
+                    <h4 class="text-2xl text-center print:text-lg md:text-lg">Bachelor of Science in Information Technology</h4>
+                    <h4 class="text-xl text-center print:text-base md:text-base">(January 2023 - Present)</h4>
+                    <h4 class="text-center text-sm print:text-xs md:text-xs">Middle Georgia State University</h4>
+                </div>
+                <div class="mt-6 print:mt-4">
+                    <h4 class="text-xl text-center print:text-lg md:text-lg">Associate of Applied Science in Computer Support</h4>
+                    <h4 class="text-xl text-center print:text-base md:text-base">(2018-2020)</h4>
+                    <h4 class="text-center text-sm print:text-xs md:text-xs">Georgia Northwestern Technical College</h4>
+                </div>
+            </section>
+            <section id="skills" class="text-center my-8 p-6 flex flex-col self-center border-2 border-darkraisin w-full lg:p-4 md:p-2">
+                <h2 class="font-titlefont text-4xl print:text-xl">Skills</h2>
+                <hr class="my-4 border-darkraisin  print:border-black">
+                <ul class="print:text-sm">
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                    <li>C &amp; C++</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Angular</li>
+                    <li>GatsbyJS</li>
+                    <li>Firebase</li>
+                </ul>
+            </section>
+        </div>
+        <div id="resume-right-col" class="w-3/4 p-2 pl-8 print:w-2/3 flex flex-col justify-evenly">
+            <section id="objective">
+                <h2 class="text-3xl print:text-2xl">Career Objective</h2>
+                <hr class="border-darkraisin my-4 print:border-black">
+                <h4 class="text-lg print:text-xs">Software engineering student with an AAS in computer support, 
+                    seeking to leverage academic knowledge and practical skills gained through coursework and hands-on projects to excel 
+                    in a dynamic and challenging role within the field of information technology. Committed to transitioning from a 
+                    construction and computer hardware background to pursue a career in software development, with a strong passion for web 
+                    technologies and a keen interest in crafting innovative and customized solutions. Eager to contribute to an organization, 
+                    utilizing problem-solving abilities, creativity, and a collaborative mindset to drive project advancements and 
+                    deliver exceptional user experiences.</h4>
+            </section>
+            <section id="experience" class="flex flex-col p-3 justify-center">
+                <h2 class="text-3xl mt-8 print:text-lg print:mt-0">Experience</h2>
+                <hr class="border-darkraisin my-2 w-1/2 print:border-black  xl:w-3/4 lg:w-full">
+                <div>
+                    <h3 class="text-2xl print:text-base">General Tradesman</h3>
+                    <h4 class="print:text-sm">B&C Construction</h4>
+                    <h4 class="print:text-sm">Chickamauga, GA</h4>
+                    <h4 class="print:text-sm">2013-2022</h4>
+                </div>
+                    <hr class="my-4 border-darkraisin w-1/2 print:border-black xl:w-3/4 lg:w-full">
+                    <h4 class="text-xl">Duties and Responsibilities</h4>
+                    <ul class="w-2/3 md:w-full">
+                    <li class="text-sm print:text-xs"><span class="text-lg underline print:text-base">Collaborative work</span><br>Coordinate and work closely with other tradesmen, contractors, architects, and project managers to complete projects efficientlyu and effectively.</li>
+                    <li class="text-sm print:text-xs"><span class="text-lg underline print:text-base">Problem-solving</span><br>Troubleshoot and solve construction-related problems that may arise during a project. Apply critical thinking and analytical skills to find practical and effective solutions, considering time, cost, and feasibility constraints.</li>
+                    <li class="text-sm print:text-xs"><span class="text-lg underline print:text-base">Documentation and Reporting</span><br>Maintain accurate records of work completed, martierlas used, and time spent on projects. Prepare reports and other necessary documentation to ensure effective project management and communication.</li>
+                    <li class="text-sm print:text-xs"><span class="text-lg underline print:text-base">Material Handling</span><br>Procure, store, organize, and otherwise manage materials required for construction projects.</li>
+                    <li class="text-sm print:text-xs"><span class="text-lg underline print:text-base">Continuous Learning</span><br>Stay updated with techniques and technologies relevant to all practiced trades. Seek opportunities for training to enhance skills and knowledge, improving overall performance.</li>
+                </ul>
+            </section>
+        </div>
+        <button onclick="window.print()" class="w-8 bottom-0 mt-auto print:hidden" title="Print"><img src="./img/printer.png" alt="printer-button"></button>
+    </div>
+
+</body>
+</html>

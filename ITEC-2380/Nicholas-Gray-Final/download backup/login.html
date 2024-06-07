@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Martian+Mono&family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Login - Erebos Gym</title>
+</head>
+<body class="bg-lace flex flex-col h-screen justify-between select-none" onload="onLoadAuthCheckBypassLogin()">
+        <main class="flex flex-col justify-evenly font-titlefont text-falu bg-dutch w-2/5 self-center my-auto p-16 h-3/4 rounded-xl drop-shadow-dark border-2 border-sage xl:w-3/5 xl:h-5/6 lg:h-full lg:w-full">
+            <h1 class="text-6xl text-center mb-24 xl:text-5xl lg:text-4xl md:text-3xl lg:mb-8 md:mb-0">Log in to get started</h1>
+            <section class="mx-16 xl:mx-8 lg:mx-4 md:mx-0">
+                <h3 class="text-2xl ml-4 xl:text-xl lg:text-lg md:text-md">Email Address</h3>
+                <div class="flex flex-row border-dutch bg-lace w-full py-2 px-4 rounded-md">
+                    <img src="./img/envelope.png" alt="" class="w-8 opacity-50">
+                    <input type="email" name="email-input" id="email-input" class="bg-transparent focus:outline-none ml-4 w-full text-black font-copyfont">
+                </div>
+            </section>
+            <section class="mx-16 xl:mx-8 lg:mx-4 md:mx-0">
+                <h3 class="text-2xl ml-4 xl:text-xl lg:text-lg md:text-md">Password</h3>
+                <div class="flex flex-row border-dutch bg-lace w-full py-2 px-4 rounded-md">
+                    <img src="./img/padlock.png" alt="" class="w-8 opacity-50">
+                    <input type="password" name="password-input" id="password-input" class="bg-transparent focus:outline-none ml-4 w-full text-black font-copyfont">
+                </div>
+            </section>
+            <button onclick="login()" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl self-center ml-32 mt-4 hover:scale-105 transition transform ease-in-out duration-100 xl:text-2xl lg:text-xl lg:ml-0 lg:self-center md:text-lg ">LOG IN</button>
+            <p class="text-center ml-32 lg:ml-0">or</p>
+            <button onclick="guestLogin()" class="ml-32 lg:ml-0 underline">Continue as guest</button>
+        </main>
+        <script src="scripts/auth.js"></script>
+</body>
+</html>

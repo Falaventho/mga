@@ -1,0 +1,14 @@
+{
+  "name": "erebos-gym-local",
+  "version": "1.0.0",
+  "description": "A mockup that uses localdata",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx tailwindcss -i ./input.css -o ./src/styles.css --watch"
+  },
+  "author": "Grey",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

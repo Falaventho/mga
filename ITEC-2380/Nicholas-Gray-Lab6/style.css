@@ -1,0 +1,299 @@
+/*
+
+    Color Scheme:
+    blue: #0e2db5;
+    gold: #9c820d;
+    light blue: #6982f3;
+    off-white of choice: whitesmoke;
+
+*/
+
+
+:root {
+    --primary: #0e2db5;
+    --secondary: #9c820d;
+    --success: #2db50e;
+    --info: #6982f3;
+    --danger: #b50e2d;
+    --background: whitesmoke;
+    --container-background: white;
+    --text-color: black;
+}
+
+body {
+    color: var(--text-color);
+    background-image: url(img/background-large.jpg);
+    background-size: cover;
+}
+
+hr{
+    width: 100%;
+    border-color: grey;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    min-width: min-content;
+    margin: 40px auto 50px auto;
+    background-color: var(--container-background);
+    font-family: 'Nunito Sans', sans-serif;
+    outline: 2px solid black;
+    border-radius: 1px;
+    box-shadow: 3px 3px 15px grey;
+    /* animation: 0.5s ease-in 0s 1 slideInFromLeft; */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 0px 40px;
+    border: 1px solid var(--secondary);
+}
+
+.name-and-info {
+    display: flex;
+}
+
+.title  {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: var(--primary);
+    margin: auto;
+    padding-right: 16px;
+    border-right: 4px solid var(--secondary);
+}
+
+.contact-icons {
+    color: grey;
+    align-self: flex-end;
+    width:300px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    text-align: right;
+    padding-left: 16px;
+}
+
+.navbar {
+    border-right: 2px solid grey;
+    padding: 16px 16px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    background-color: var(--info);
+    padding: 0px 8px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.navlink-active {
+    background-color: var(--secondary);
+}
+
+.navlink:hover {
+    background-color: var(--primary);
+    transform: scale(1.05);
+    transition: ease 0.15s;
+}
+
+.navlink-active:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+    transition: ease 0.15s;
+}
+
+.main-box {
+    padding-left: 32px;
+}
+
+.service-box {
+    margin: 25px 0px;
+    display: flex;
+    padding-left: 32px;
+}
+
+.service-img {
+    border-radius: 3px;
+}
+
+.service-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-header {
+    color: var(--primary)
+}
+
+.content-image {
+    max-width: 200px;
+}
+
+.toilet-box {
+    display: flex;
+    align-items: center;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+}
+
+.content-pad-r {
+    padding-right: 32px;
+}
+
+.header-text {
+    color: var(--secondary);
+}
+
+.footer-box {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    background-color: whitesmoke;
+    border: 1px solid var(--secondary);
+}
+
+.membership-link-container {
+    display: flex;
+    max-width: 900px;
+}
+
+.membership-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-link-img {
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+.membership-link-caption {
+    text-align: center;
+    color: var(--info);
+    font-size: small;
+}
+
+
+.loud {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--info);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.review-link {
+    display: inline-block;
+    margin: 16px auto;
+}
+
+
+
+/* Color changes for fa icons, at end to save from potential headaches */
+.fa-facebook-square {
+    color: black;
+}
+
+.fa-twitter-square {
+    color: black;
+}
+
+.fa-envelope-square {
+    color: black;
+}
+
+
+/* media queries */
+
+
+@media screen and (max-width:900px) {
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .navbar {
+        border-right: none;
+        padding-bottom: 32px;
+        border-bottom: 2px solid grey;
+    }
+
+    .navlink {
+        padding: 0px 8px;
+        width: 90%;
+        align-self: center;
+    }
+
+    .membership-link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-link {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+@media print {
+
+    nav, footer, img {
+        display: none !important;
+    }
+
+    .contact-icons {
+        display: none;
+    }
+
+    .header-box {
+        padding: 0px 16px;
+        max-height: 400px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .contact-info {
+        font-size: x-small;
+    }
+
+}

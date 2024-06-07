@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Martian+Mono&family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Schedule - Erebos Gym</title>
+</head>
+<body class="bg-lace flex flex-col h-screen justify-between select-none text-falu font-titlefont">
+    <div class="mt-8 flex flex-col justify-between">
+        <div class="flex flex-row justify-between w-full">
+            <a href="./index.html" class="bg-falu text-lace text-4xl px-4 py-2 rounded-xl hover:scale-105 transition transform ease-in-out duration-100 ml-8 lg:text-xl sm:text-base">Back</a>
+            <a href="./planner.html" class=" mr-8 hover:scale-110 transition transform ease-in-out duration-100"><img src="./img/cog.png" alt="settings" class="w-16 h-16 lg:w-8 lg:h-8"></a>
+        </div>
+        <div>
+            <h1 class="text-6xl text-center px-8 xl:text-4xl lg:text-3xl lg:mt-4" id="schedule-title">Week of <span id="displayDate"></span></h1>
+            <hr class="border-falu border-2 w-1/3 mx-auto">
+        </div>
+    </div>
+    <main class="flex flex-row justify-evenly h-full border-falu border-4 mt-8 mb-16 mx-16 rounded-lg md:flex-col md:border-0 md:mx-2">
+        <button id="button-left" class="w-16 h-16 self-center hover:scale-110 transition transform ease-in-out duration-100 md:hidden"><img src="./img/arrow-left.png" alt="left arrow"></button>
+        <div class="flex flex-col justify-evenly font-titlefont text-falu bg-dutch w-1/5 my-auto px-8 py-4 h-3/4 rounded-xl drop-shadow-dark border-2 border-sage md:flex-row md:w-full xl:px-4 lg:px-2">
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-sunday"><span class="md:hidden">Sunday</span><span class="hidden md:inline-block">Su</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-monday"><span class="md:hidden">Monday</span><span class="hidden md:inline-block">M</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-tuesday"><span class="md:hidden">Tuesday</span><span class="hidden md:inline-block">Tu</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-wednesday"><span class="md:hidden">Wednesday</span><span class="hidden md:inline-block">W</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-thursday"><span class="md:hidden">Thursday</span><span class="hidden md:inline-block">Tr</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-friday"><span class="md:hidden">Friday</span><span class="hidden md:inline-block">F</span></button>
+            <button class="border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-full h-12 text-center text-4xl hover:scale-105 transition transform ease-in-out duration-100 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs md:px-2" id="button-saturday"><span class="md:hidden">Saturday</span><span class="hidden md:inline-block">Sa</span></button>
+        </div>
+        <div class="flex flex-row justify-evenly font-titlefont text-falu bg-dutch w-3/5 my-auto px-16 py-8 h-3/4 rounded-xl drop-shadow-dark border-2 border-sage md:w-full md:mt-4">
+            <div class="flex flex-col gap-y-4">
+                <div>
+                    <h2 class="text-5xl text-center px-8 2xl:text-4xl xl:text-3xl lg:text-xl whitespace-nowrap">Main Exercise</h2>
+                    <hr class="border-falu border-2 mx-auto lg:w-1/2">
+                </div>
+                <h3 class="flex justify-center bg-lace pt-1 px-4 rounded-md border-2 border-falu w-64 h-16 pb-2 pt-3 text-center text-4xl mx-auto whitespace-nowrap 2xl:text-2xl xl:w-min xl:h-min xl:text=xl lg:text-lg md:text-base md:my-4 sm:text-xs" id="exercise">%Exercise%</h3>
+                <div class="flex flex-col justify-between border-dutch bg-lace pt-1 px-4 rounded-md border-2 border-falu w-64 text-center text-4xl mx-auto 2xl:text-2xl xl:text=xl lg:text-lg md:text-base sm:text-xs xl:w-min xl:h-min whitespace-nowrap">
+                    <div>
+                        <h3 class="">Sets:</h3>
+                        <hr class="border-falu border-1 w-1/3 mx-auto">
+                    </div>
+                    <div class="text-center">
+                        <h3 id="set1">0 X %0%</h3>
+                        <h3 id="set2">0 X %0%</h3>
+                        <h3 id="set3">0 X %0%</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <div class="mb-4">
+                    <h2 class="text-5xl text-center px-8 2xl:text-4xl xl:text-3xl lg:text-xl">Accessories</h2>
+                    <hr class="border-falu border-2 mx-auto lg:w-1/2">
+                </div>
+                <div id="accessories">
+
+                </div>
+            </div>
+        </div>
+        <button id="button-right" class="w-16 h-16 self-center hover:scale-110 transition transform ease-in-out duration-100 md:hidden"><img src="./img/arrow-right.png" alt="right arrow"></button>
+        <div class="flex-row justify-between hidden p-4 md:flex">
+            <button id="button-left-alt" class="w-16 h-16 self-center hover:scale-110 transition transform ease-in-out duration-100"><img src="./img/arrow-left.png" alt="left arrow"></button>
+            <button id="button-right-alt" class="w-16 h-16 self-center hover:scale-110 transition transform ease-in-out duration-100"><img src="./img/arrow-right.png" alt="right arrow"></button>
+        </div>
+    </main>
+    <script src="scripts/auth.js" onload="onLoadAuthCheck()"></script>
+    <script src="scripts/schedule.js"></script>
+</body>
+</html>
